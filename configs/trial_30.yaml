@@ -1,0 +1,23 @@
+training:
+  batch_size: 128
+  gamma: 0.991
+  actor_lr: 0.000258
+  critic_lr: 0.000621
+  episodes: 20
+
+transformer:
+  d_model: 128
+  nhead: 2
+  num_layers: 4
+
+cnn:
+  hidden_size: 512
+
+bavar:
+  num_models: 90
+  burn_in_ratio: 0.34
+  tau_bavar: 0.077
+
+black_litterman:
+  tau_bl: 0.039
+  omega_sigma: 0.052

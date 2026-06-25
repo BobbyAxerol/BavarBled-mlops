@@ -1,0 +1,39 @@
+{
+  "dataset": {
+    "asset_class": "equity",
+    "universe_name": "djia_29"
+  },
+  "features": {
+    "lookback": 15
+  },
+  "training": {
+    "batch_size": 128,
+    "gamma": 0.991,
+    "actor_lr": 0.000258,
+    "critic_lr": 0.000621,
+    "episodes": 20,
+    "d_model": 128,
+    "nhead": 2,
+    "num_layers": 4,
+    "hidden_size": 512,
+    "num_models": 90,
+    "burn_in_ratio": 0.34,
+    "tau_bavar": 0.077,
+    "tau_bl": 0.039,
+    "omega_sigma": 0.052
+  },
+  "registration": {
+    "tags": [
+      "sharpe_ratio",
+      "total_reward",
+      "final_portfolio_value",
+      "actor_lr",
+      "critic_lr",
+      "episodes",
+      "lookback",
+      "num_models",
+      "asset_class",
+      "universe_name"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+# Python cache and environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+ENV/
+.pytest_cache/
+
+# MLflow tracking and model weights
+mlruns/
+model_bundle.pth
+performance_report.txt
+
+# Local configs and env variables
+.env
+
+# Code packaging staging folders
+.code_staging/
