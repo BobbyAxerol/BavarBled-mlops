@@ -85,6 +85,10 @@ class BavarBledModelWrapper(mlflow.pyfunc.PythonModel):
         return action.tolist()
 
 def main():
+    import torch
+    if torch.cuda.is_available():
+        torch.backends.cudnn.benchmark = True
+        
     parser = argparse.ArgumentParser()
     parser.add_argument('--model_name', type=str, default='bavar_bled_model')
     args = parser.parse_args()
